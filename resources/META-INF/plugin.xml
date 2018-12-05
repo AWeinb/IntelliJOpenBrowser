@@ -1,0 +1,29 @@
+<idea-plugin>
+  <id>de.axp.openbrowser</id>
+  <name>Open Browser Plugin</name>
+  <version>1.0</version>
+  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">XYZ</vendor>
+
+  <description><![CDATA[
+      Adds a menu to open browsers with the XYZ URL.<br>
+    ]]></description>
+
+  <change-notes><![CDATA[
+    ]]>
+  </change-notes>
+
+  <idea-version since-build="145.0"/>
+
+  <actions>
+    <group id="OpenBrowserGroup" text="Open Browser" popup="true">
+      <add-to-group group-id="MainMenu" anchor="last"/>
+
+      <action id="OpenIEAction" class="de.axp.openbrowser.OpenIEAction" text="Open Internet Exploiter"
+              description="Open currently running configuration in IE"/>
+      <action id="OpenFirefoxAction" class="de.axp.openbrowser.OpenFirefoxAction" text="Open Firefox"
+              description="Open currently running configuration in FF"/>
+      <action id="OpenChromeAction" class="de.axp.openbrowser.OpenChromeAction" text="Open Chrome"
+              description="Open currently running configuration in CH"/>
+    </group>
+  </actions>
+</idea-plugin>
